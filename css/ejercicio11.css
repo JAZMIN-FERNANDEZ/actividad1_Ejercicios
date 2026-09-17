@@ -5,8 +5,8 @@
 }
 
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #f2f6fc;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #faf2fc;
     color: #333;
     display: flex;
     justify-content: center;
@@ -15,32 +15,38 @@ body {
 }
 
 .contenedor {
-    width: 400px;
+    width: 550px;
+    height: 550px;
     background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
     text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    color: #0c2344;
+    color: #01070f;
     margin-bottom: 10px;
+    font-size: 28px;
 }
 
 p {
     margin-bottom: 20px;
-    color: #555;
+    color: #500808;
 }
 
 .formulario {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 14px;
+    width: 100%;
 }
 
 label {
-    text-align: left;
+    text-align: center;
     font-weight: bold;
 }
 
@@ -49,11 +55,13 @@ input {
     border: 1px solid #bbb;
     border-radius: 6px;
     font-size: 16px;
+    width:220px;
+    align-self: center;
 }
 
 input:focus {
     outline: none;
-    border-color: #0d6efd;
+    border-color: #0dfd35;
 }
 
 input[readonly] {
@@ -63,22 +71,38 @@ input[readonly] {
 
 button {
     margin-top: 10px;
-    padding: 12px;
-    background-color: #7c048b;
+    padding: 10px;
+    background-color: #770250;
     color: white;
     border: none;
     border-radius: 6px;
     font-size: 16px;
     font-weight: bold;
-    cursor: pointer;
+    cursor: pointer;  
+    width: 180px;
+    align-self: center;
 }
 
+
 button:hover {
-    background-color: #084298;
+    background-color: #089820;
 }
 
 #mensaje {
     margin-top: 10px;
     font-weight: bold;
     color: red;
+}
+@media (max-width: 700px) {
+
+    .contenedor {
+        width: 90%;
+        height: auto;
+        min-height: 550px;
+
+        padding: 50px 35px;
+
+        border-radius: 50%;
+    }
+
 }

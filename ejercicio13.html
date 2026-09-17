@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Una persona puede votar</title>
+<link rel="stylesheet" href="css/ejercicio13.css">
+</head>
+<body>
+  <div class="contenedor">
+    <h1>Puede votar si es mayor de edad</h1>
+    <p>Verifique si es mayor de edad</p>
+
+    <form class="formulario">
+      <label for="edad">edad</label>
+      <input type="text" id="edad" placeholder="Ejemplo: 18">
+      <button type="button" onclick="verificarEdad()">Convertir</button>
+      <label for="resultado">¿Puede votar?</label>
+      <input type="text" id="resultado" readonly placeholder="Resultado">
+
+      <p id="mensaje"></p>
+    </form>
+  </div>
+  <script src="js/ejercicio13.js"></script>
+</body>
+
+</html>
