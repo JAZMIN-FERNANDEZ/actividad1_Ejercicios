@@ -1,0 +1,61 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #ffe0ef;
+    text-align: center;
+    padding-top: 40px;
+}
+
+h1 {
+    color: #d6336c;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    border: 2px solid #ff8fc4;
+    border-radius: 5px;
+    width: 220px;
+}
+
+button {
+    background-color: #ec4899;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #d6336c;
+}
+
+#lista-tareas {
+    list-style: none;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0;
+    text-align: left;
+}
+
+#lista-tareas li {
+    background-color: #ffd6ea;
+    color: #a3305c;
+    padding: 10px 14px;
+    margin-bottom: 8px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#lista-tareas li button {
+    background-color: #db2777;
+    padding: 4px 10px;
+    margin: 0;
+}
+
+#lista-tareas li button:hover {
+    background-color: #a3305c;
+}
